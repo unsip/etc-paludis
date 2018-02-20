@@ -1,0 +1,3 @@
+hooks/*
+hooks/configs/filesystem-manager.conf.example
+!hooks/configs
