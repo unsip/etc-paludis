@@ -173,7 +173,6 @@
 + /profiles/**/amd64
 + /profiles/**/amd64/lib32
 + /profiles/**/linux
-+ /profiles/**/13.0
 + /profiles/**/17.0
 + /profiles/**/64bit-native
 + /profiles/**/multilib
