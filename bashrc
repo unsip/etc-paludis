@@ -16,7 +16,7 @@ CXXONLY_FLAGS="-fnothrow-opt -Wno-unused-local-typedefs"
 
 CFLAGS="-O2 -pipe ${ARCH_FLAGS} ${O3_FLAGS}"
 CXXFLAGS="${CFLAGS} ${CXXONLY_FLAGS}"
-LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl"
+LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed"
 
 # Detect terminal width dynamically for better [ ok ] align
 save_COLUMNS=${COLUMNS}
