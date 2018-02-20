@@ -1,0 +1,197 @@
+# Keep metadata.xml in a category dir, when "+cat/smth**"+"-cat/**" filter in action
++ **/metadata.xml
+# Remove older change logs (I want only recent)
+- ChangeLog-*
+
+#
+# Remove some categories/packages I unlikely will use
+# (keep only used in particular category)
+#
+- app-antivirus/***
++ app-dicts/aspell-en**
++ app-dicts/aspell-ru**
++ app-dicts/myspell-en**
++ app-dicts/myspell-ru**
+- app-dicts/**
+- app-cdr/***
+- app-emacs/***
+- app-forensics/***
++ app-i18n/enca**
+- app-i18n/**
+- app-leechcraft/***
++ app-mobilephone/obex**
+- app-mobilephone/**
+- app-pda/***
+- app-xemacs/***
+- dev-ada/***
+- dev-db/lib_mysql**
+- dev-db/mtop**
+- dev-db/mydumper**
+- dev-db/myodbc**
+- dev-db/mysql**
+- dev-db/mytop**
+- dev-dotnet/***
+- dev-embedded/***
+- dev-erlang/***
+- dev-games/***
+- dev-haskell/***
+- dev-lang/mono**
+- dev-lisp/***
+- dev-lua/***
+- dev-ml/***
+- dev-php/***
+- dev-ros/***
++ dev-scheme/guile**
+- dev-scheme/**
+- dev-tcltk/***
+- games-*/***
++ gnome-base/dconf**
++ gnome-base/gconf**
++ gnome-base/gnome-common**
++ gnome-base/gsettings-desktop-schemas**
++ gnome-base/gnome-keyring**
++ gnome-base/lib**
+- gnome-base/**
++ gnome-extra/zenity**
++ gnome-extra/yelp-xsl**
+- gnome-extra/**
+- gnustep-apps/***
+- gnustep-base/***
+- gnustep-libs/***
+- gpe-base/***
+- gpe-utils/***
+- lxde-base/***
+- lxqt-base/***
++ mail-client/mailx**
+- mail-client/**
+- mail-filter/***
++ mail-mta/ssmtp**
+- mail-mta/**
+- mate-base/***
+- mate-extra/***
+- media-gfx/iscan**
+- media-gfx/gnome-**
+- media-plugins/gmpc**
+- media-plugins/vdr**
+- media-radio/***
+- media-tv/***
+- net-dialup/***
++ net-ftp/ncftp**
+- net-ftp/**
++ net-mail/mailbase**
+- net-mail/**
++ net-nds/rpcbind**
+- net-nds/**
+- net-news/***
+- net-nntp/***
++ net-p2p/ktorrent**
+- net-p2p/**
++ net-print/cups**
+- net-print/**
+- net-proxy/***
+- net-zope/***
+- razorqt-base/***
+- ros-meta/***
+- rox-base/***
+- rox-extra/***
+- sci-biology/***
+- sci-calculators/***
+- sci-chemistry/***
+- sci-electronics/***
+- sci-geosciences/***
+- sci-mathematics/***
+- sci-misc/***
+- sci-physics/***
+- sec-policy/***
+- sys-cluster/***
+- sys-fabric/***
++ sys-firmware/intel-microcode**
+- sys-firmware/**
+- sys-freebsd/***
+- sys-infiniband/***
++ sys-kernel/genkernel**
++ sys-kernel/gentoo-sources**
++ sys-kernel/linux-firmware**
++ sys-kernel/linux-headers**
+- sys-kernel/**
+- virtual/emacs*/***
+- virtual/leechcraft*/***
+- www-apache/***
+- www-apps/horde**
+- www-apps/php**
+- www-misc/***
+- www-plugins/***
++ x11-drivers/xf86-input-libinput**
++ x11-drivers/nvidia-drivers**
++ x11-drivers/xf86-video-nouveau**
+- x11-drivers/**
+- x11-plugins/***
+- x11-terms/***
+- x11-themes/gdm**
++ x11-themes/gnome-themes-standard**
+- x11-themes/gnome**
+- x11-themes/gnustep**
+- x11-themes/icewm**
+- x11-themes/fvwm**
+- x11-themes/mate**
+- x11-themes/vdr**
+- x11-themes/zuki**
+- x11-wm/***
+- xfce-base/***
+- xfce-extra/***
+
+#
+# Do not sync some other (optional or outdated) stuff
+#
+- /eclass/tests/
++ /eclass/***
+- /licenses/
++ /metadata/glsa/glsa-2014*
++ /metadata/glsa/index.xml
++ /metadata/glsa/timestamp.chk
+- /metadata/glsa/**
++ /metadata/news/2014-**
++ /metadata/news/timestamp.chk
+- /metadata/news/**
+- /metadata/.cvsignore
+
+#
+# Keep files that make up a prifile (PMS-5 §5.2.1)
+#
++ /profiles/**/eapi
++ /profiles/**/make*
++ /profiles/**/parent
++ /profiles/**/package*
++ /profiles/**/profile*
++ /profiles/**/use*
++ /profiles/**/ChangeLog
+
+#
+# Keep nested directories according to my profile:
+# «native 64bit gentoo linux release 13.0 and 17.0 w/ multilib and KDE desktop»
+#
++ /profiles/**/amd64
++ /profiles/**/amd64/lib32
++ /profiles/**/linux
++ /profiles/**/13.0
++ /profiles/**/17.0
++ /profiles/**/64bit-native
++ /profiles/**/multilib
++ /profiles/**/multilib/lib32
++ /profiles/**/desktop
++ /profiles/**/plasma
+
+#
+# Remove architectures/profiles/features I don't use
+# (i.e. everything doesn't mentioned above)
+#
++ /profiles/arch/base**
+- /profiles/arch/**
+- /profiles/default/**
+- /profiles/embedded/***
+- /profiles/features/**
+- /profiles/hardened/***
+- /profiles/prefix/**
+- /profiles/releases/**
+- /profiles/targets/**
+- /profiles/uclibc/***
