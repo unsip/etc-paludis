@@ -37,7 +37,6 @@
 - dev-haskell/***
 - dev-lang/mono**
 - dev-lisp/***
-- dev-lua/***
 - dev-ml/***
 - dev-php/***
 - dev-ros/***
@@ -66,6 +65,7 @@
 - mail-client/**
 - mail-filter/***
 + mail-mta/ssmtp**
++ mail-mta/nullmailer**
 - mail-mta/**
 - mate-base/***
 - mate-extra/***
@@ -109,7 +109,7 @@
 - sys-firmware/**
 - sys-freebsd/***
 - sys-infiniband/***
-+ sys-kernel/genkernel**
++ sys-kernel/dracut**
 + sys-kernel/gentoo-sources**
 + sys-kernel/linux-firmware**
 + sys-kernel/linux-headers**
@@ -124,6 +124,8 @@
 + x11-drivers/xf86-input-libinput**
 + x11-drivers/nvidia-drivers**
 + x11-drivers/xf86-video-nouveau**
++ x11-drivers/xf86-input-synaptics**
++ x11-drivers/xf86-input-evdev**
 - x11-drivers/**
 - x11-plugins/***
 - x11-terms/***
