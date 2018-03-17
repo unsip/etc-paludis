@@ -81,6 +81,7 @@
 + net-mail/mailbase**
 - net-mail/**
 + net-nds/rpcbind**
++ net-nds/openldap**
 - net-nds/**
 - net-news/***
 - net-nntp/***
@@ -99,7 +100,6 @@
 - sci-chemistry/***
 - sci-electronics/***
 - sci-geosciences/***
-- sci-mathematics/***
 - sci-misc/***
 - sci-physics/***
 - sec-policy/***
