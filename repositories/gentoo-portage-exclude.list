@@ -43,7 +43,6 @@
 + dev-scheme/guile**
 - dev-scheme/**
 - dev-tcltk/***
-- games-*/***
 + gnome-base/dconf**
 + gnome-base/gconf**
 + gnome-base/gnome-common**
