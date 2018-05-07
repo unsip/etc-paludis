@@ -180,6 +180,7 @@
 + /profiles/**/multilib/lib32
 + /profiles/**/desktop
 + /profiles/**/plasma
++ /profiles/**/systemd
 
 #
 # Remove architectures/profiles/features I don't use
