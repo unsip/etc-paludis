@@ -13,7 +13,6 @@
 + app-dicts/myspell-en**
 + app-dicts/myspell-ru**
 - app-dicts/**
-- app-cdr/***
 - app-emacs/***
 - app-forensics/***
 + app-i18n/enca**
@@ -74,7 +73,6 @@
 - media-plugins/vdr**
 - media-radio/***
 - media-tv/***
-- net-dialup/***
 + net-ftp/ncftp**
 - net-ftp/**
 + net-mail/mailbase**
@@ -109,6 +107,7 @@
 - sys-freebsd/***
 - sys-infiniband/***
 + sys-kernel/dracut**
++ sys-kernel/genkernel**
 + sys-kernel/gentoo-sources**
 + sys-kernel/linux-firmware**
 + sys-kernel/linux-headers**

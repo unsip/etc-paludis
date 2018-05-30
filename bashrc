@@ -30,3 +30,6 @@ PALUDIS_FILESYSTEM_HOOK_NO_WARNING=yes
 
 # Setup per package environment
 [ -e /usr/libexec/paludis-hooks/setup_pkg_env.bash ] && source /usr/libexec/paludis-hooks/setup_pkg_env.bash
+
+# Protect xrandr scripts (needed for Nvidia setup)
+CONFIG_PROTECT="/usr/share/sddm/scripts/Xsetup"
